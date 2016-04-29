@@ -1,0 +1,38 @@
+ Jumping Bibek
+
+Dr.Bibek Manu has returned once again for his final adventure. This time he has invented an "evil-staircase". The staircase is unique and state of the art. He designed this system just to escape from his enemies fast. The steps are numbered from 0 to n-1 . Each step has a 'magic-number' written on it. At any given step (suppose q), the person can either - move the next step (q+1) or he can jump as many steps as the 'magic-number'. Suppose the current step is '5' and the 'magic-number' on step '5' is '4'. In the next chance, Manu can either jump to step '6'(5+1) or step '9'(5+4). The 'magic-numbers' can even be negative, in that case he has to come down so many steps or go one step up.
+Manu is an evil genius and many want to catch. Help Manu find the minimum number of jumps needed to reach the top of the staircase. Manu always starts at 0-step. Also note that Manu cannot fly (:P), so if any jump results in a step > n, it is considered as invalid.
+top of the staircase would be step 'n'
+Problem statement:
+
+Given a series of steps, each step has a magic number which can be used to jump so many steps, find the minimum number of jumps required to reach the top of the staircase. (note that both kinds of jump - jump to next step, jump as many steps as the 'magic-number' are considered equal). If it is not possible to reach the top of the staircase, print the string "Fail Bibek".
+Input Format:
+
+First line of the input contains 't', the number of test cases. 't' test cases follow. First line of each test case contains a number 's', the number of steps. The next line contains 's' space separated integers which denote the 'magic-number' of each step. (s[0] to s[n-1])
+1 <= t <= 20
+1 <= s <= 10
+-20 <= magic-number[i] <= 20
+(for convenience, magic-number[i] will not be equal to 0)
+Ouput Format:
+
+For each test case output one integer in a single line, the minimum number of jumps required to reach the top. Print "Fail Bibek" if the top of the staircase cannot be reached.
+Sample Input
+
+2
+6
+-1 -2 -3 -4 -1 -1
+4
+1 2 3 4
+
+Sample Output
+
+6
+3
+
+Output in Mooshak
+
+6\n
+3\n
+
+\n refers to a new line character.
+[ ] refers to a space character. 
